@@ -28,7 +28,7 @@ Sense = 2
 ~RButton::
 {
 	While GetKeyState("RButton"){
-PixelSearch, TargetX, TargetY, 0, 0, %A_ScreenWidth%, %A_ScreenHeight%, %color%, 5, Fast
+PixelSearch, TargetX, TargetY, 100, 100, %A_ScreenWidth%, %A_ScreenHeight%, %color%, 5, Fast
 If ErrorLevel = 0 
 { 
 MoveX := ((TargetX - MidX) / sense) 
